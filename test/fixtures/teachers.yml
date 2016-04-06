@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  school_id: 
+  name: MyString
+  hiredate: 2016-04-05
+  age: 1
+
+two:
+  school_id: 
+  name: MyString
+  hiredate: 2016-04-05
+  age: 1

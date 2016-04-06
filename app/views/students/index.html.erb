@@ -1,0 +1,10 @@
+<div>
+  <ol>
+    <% @students.each do |student| %>
+      <li>
+        <p><%= student.name %></p>
+        <p><%= student.age %></p>
+      </li>
+    <% end %>
+  </ol>
+</div>

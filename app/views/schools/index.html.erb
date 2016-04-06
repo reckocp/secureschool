@@ -1,0 +1,12 @@
+<h1>Schools Homepage</h1>
+
+<ol>
+  <% @schools.each do |school| %>
+    <li>
+      <p><%= school.name %></p>
+      <p><%= school.location %></p>
+      <p>"<%= school.motto %>"</p>
+      <p><%= link_to "School", school_path(school) %></p>
+    </li>
+  <% end %>
+</ol>
