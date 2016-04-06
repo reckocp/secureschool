@@ -1,8 +1,13 @@
 class TeachersController < ApplicationController
-  def index
-    @school = School.find(params.fetch(:school_id))
-    @teachers = Teacher.where(school_id: params.fetch(:school_id))
-    @teacher = Teacher.find(params.fetch(:teacher_id))
-  end
+ def index
+   @school = School.find(params.fetch(:school_id))
+   @teachers = @school.teachers
+ end
+
+ def show
+   @teacher = School.find(params.fetch(:school_id))
+   @student = Teacher.find(params.fetch(:school_id))
+   @students = @teacher.students
+ end
 
 end
